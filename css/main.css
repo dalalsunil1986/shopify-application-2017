@@ -4,19 +4,124 @@
    Author's custom styles
    ========================================================================== */
 
+/* Shopify fonts, taken directly from Shopify CDN because YOLO 😈 */
+@font-face {
+    font-family: "Brandon";
+    src: url("https://cdn.shopify.com/shopify-marketing_assets/static/Brandon--light.woff2") format("woff2"), url("https://cdn.shopify.com/shopify-marketing_assets/static/Brandon--light.woff") format("woff");
+    font-style: normal;
+    font-weight: 300
+}
+@font-face {
+    font-family: "Brandon";
+    src: url("https://cdn.shopify.com/shopify-marketing_assets/static/Brandon--regular.woff2") format("woff2"), url("https://cdn.shopify.com/shopify-marketing_assets/static/Brandon--regular.woff") format("woff");
+    font-style: normal;
+    font-weight: 400
+}
+@font-face {
+    font-family: "Brandon";
+    src: url("https://cdn.shopify.com/shopify-marketing_assets/static/Brandon--medium.woff2") format("woff2"), url("https://cdn.shopify.com/shopify-marketing_assets/static/Brandon--medium.woff") format("woff");
+    font-style: normal;
+    font-weight: 500
+}
+@font-face {
+    font-family: "Brandon";
+    src: url("https://cdn.shopify.com/shopify-marketing_assets/static/Brandon--bold.woff2") format("woff2"), url("https://cdn.shopify.com/shopify-marketing_assets/static/Brandon--bold.woff") format("woff");
+    font-style: normal;
+    font-weight: 700
+}
+@font-face {
+    font-family: "Brandon";
+    src: url("https://cdn.shopify.com/shopify-marketing_assets/static/Brandon--black.woff2") format("woff2"), url("https://cdn.shopify.com/shopify-marketing_assets/static/Brandon--black.woff") format("woff");
+    font-style: normal;
+    font-weight: 900
+}
+/* Some text styles taken directly from Shopify's Brand page CSS, because again, YOLO 😈😈 */
+h1 {
+    font-family: "Brandon", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-kerning: normal;
+    font-kerning: normal;
+    -webkit-font-variant-ligatures: common-ligatures, contextual, discretionary-ligatures;
+    font-variant-ligatures: common-ligatures, contextual, discretionary-ligatures;
+    -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt', 'dlig';
+    font-feature-settings: 'kern', 'liga', 'clig', 'calt', 'dlig';
+    display: block;
+    margin-bottom: 0.57143em;
+    color: #30373b;
+    font-weight: 500
+}
+h2 {
+    font-family: "Brandon", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-kerning: normal;
+    font-kerning: normal;
+    -webkit-font-variant-ligatures: common-ligatures, contextual, discretionary-ligatures;
+    font-variant-ligatures: common-ligatures, contextual, discretionary-ligatures;
+    -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt', 'dlig';
+    font-feature-settings: 'kern', 'liga', 'clig', 'calt', 'dlig';
+    display: block;
+    margin-bottom: 0.66667em;
+    color: #30373b;
+    font-weight: 500
+}
+h3 {
+    font-family: "Brandon", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: auto;
+    display: block;
+    margin-bottom: 0.66667em;
+    color: #30373b;
+    font-weight: 300
+}
 
+nav.navbar {
+  background-color: #30373b;
+  min-height: 60px;
+  border: none;
+}
+nav.navbar .container .navbar-header h1.navbar-brand {
+    font-family: "Brandon", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    height: 60px;
+    line-height: 30px;
+    margin: 0;
+    padding-left: 0;
+    text-shadow: none;
+    color: #fff;
+}
+@media screen and (max-width: 768px) {
+  nav.navbar .container .navbar-header h1.navbar-brand {
+    padding-left: 30px;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+body {
+  background-color: #eee;
+}
+.jumbotron {
+  min-height: 100vh;
+  padding-top: 80px;
+  margin-bottom: -50px;
+  padding-bottom: 50px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-family: "Brandon", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    padding-left: 15px;
+  }
+}
+footer p {
+  margin: 0;
+}
